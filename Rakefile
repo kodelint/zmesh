@@ -105,7 +105,8 @@ task :install_vimplug do
     run %{
       cd $HOME/.zmesh
       #curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim #{vimplug_path}/plug.vim
-      curl -fLo ~/.zmesh/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+      cd ~/.zmesh/.config/nvim/autoload/
+      curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     }
   end
 

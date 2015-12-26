@@ -21,7 +21,7 @@ task :install => [:submodule_init, :submodules] do
   install_files(Dir.glob('tmux/*')) if want_to_install?('tmux config')
   install_files(Dir.glob('vimify/*')) if want_to_install?('vimification of command line tools')
   if want_to_install?('nvim configuration (highly recommended)')
-    install_files(Dir.glob('{nvim,nvimrc}'))
+    install_files(Dir.glob('{init.vim}'))
     Rake::Task["install_vimplug"].execute
   end
 
@@ -104,11 +104,13 @@ task :install_vimplug do
   unless File.exists?(vimplug_path)
     run %{
       cd $HOME/.zmesh
-      curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim #{vimplug_path}/plug.vim
+      #curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim #{vimplug_path}/plug.vim
+      curl -fLo ~/.zmesh/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     }
   end
 
   Vimplug::update_vimplug
+  run %{ ln -nfs "$HOME/.zmesh/nvim/init.vim" "${HOME}/.nvimrc" }
 end
 
 task :default => 'install'

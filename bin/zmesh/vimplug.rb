@@ -1,7 +1,7 @@
-# require 'fileutils'
+ require 'fileutils'
 #
-# module Vimplug
-#   @vimplug_path = File.expand_path File.join(ENV['HOME'], '.nvim', '.vimplug.local')
+ module Vimplug
+   @vimplug_path = File.expand_path File.join(ENV['HOME'], '.nvim', '.vimplug.local')
 #   def self.add_plugin_to_vimplug(plugin_repo)
 #     return if contains_vimplug? plugin_repo
 #     vimplug = vimplug_from_file
@@ -24,9 +24,9 @@
 #     vimplugs_from_file.select{ |line| line =~ /^plugins .*/ }.map{ |line| line.gsub(/plugins "(.*)"/, '\1')}
 #   end
 #
-#   def self.update_vimplug
-#     system "vim --noplugin -u #{ENV['HOME']}/.nvim/init.vim -N \"+set hidden\" \"+syntax on\" +BundleClean +BundleInstall! +qall"
-#   end
+   def self.update_vimplug
+     system "nvim +PlugInstall +qall"
+   end
 #
 #
 #   private

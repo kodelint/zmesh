@@ -108,7 +108,7 @@ task :install_vimplug do
     }
   end
 
-  zmesh::update_zmesh
+  Vimplug::update_vimplug
 end
 
 task :default => 'install'

@@ -103,10 +103,10 @@ task :install_vimplug do
   vimplug_path = File.join( '.config','nvim','autoload')
   unless File.exists?(vimplug_path)
     run %{
-      cd $HOME/.zmesh
+      #cd $HOME/.zmesh
       #curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim #{vimplug_path}/plug.vim
       #git clone https://github.com/junegunn/vim-plug.git #{vimplug_path}/plug.vim
-      curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+      curl -fLo $HOME/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     }
   end
 

@@ -100,7 +100,7 @@ task :install_vimplug do
 
   puts ""
 
-  vimplug_path = File.join('nvim','autoload')
+  vimplug_path = File.join( '.config','nvim','autoload')
   unless File.exists?(vimplug_path)
     run %{
       cd $HOME/.zmesh
@@ -111,7 +111,7 @@ task :install_vimplug do
   end
 
   Vimplug::update_vimplug
-  run %{ ln -nfs "$HOME/.zmesh/nvim/init.vim" "${HOME}/.nvimrc" }
+  run %{ ln -nfs "$HOME/.config/nvim/init.vim" "${HOME}/.nvimrc" }
 end
 
 task :default => 'install'

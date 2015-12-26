@@ -44,7 +44,7 @@ end
 
 desc 'Updates the installation'
 task :update do
-  # Rake::Task["vundle_migration"].execute if needs_migration_to_vundle?
+  # Rake::Task["vimplug_migration"].execute if needs_migration_to_vimplug?
   Rake::Task["install"].execute
   #TODO: for now, we do the same as install. But it would be nice
   #not to clobber zsh files
@@ -72,15 +72,15 @@ task :submodules do
   end
 end
 
-# desc "Performs migration from pathogen to vundle"
-# task :vundle_migration do
+# desc "Performs migration from pathogen to vimplug"
+# task :vimplug_migration do
 #   puts "======================================================"
-#   puts "Migrating from pathogen to vundle vim plugin manager. "
+#   puts "Migrating from pathogen to vimplug vim plugin manager. "
 #   puts "This will move the old .vim/bundle directory to"
 #   puts ".vim/bundle.old and replacing all your vim plugins with"
 #   puts "the standard set of plugins. You will then be able to "
 #   puts "manage your vim's plugin configuration by editing the "
-#   puts "file .vim/vundles.vim"
+#   puts "file .vim/vimplugs.vim"
 #   puts "======================================================"
 #
 #   Dir.glob(File.join('vim', 'bundle','**')) do |sub_path|
@@ -334,7 +334,7 @@ def install_files(files, method = :symlink)
   end
 end
 
-# def needs_migration_to_vundle?
+# def needs_migration_to_vimplug?
 #   File.exists? File.join('vim', 'bundle', 'tpope-vim-pathogen')
 # end
 

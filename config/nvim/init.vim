@@ -1,5 +1,5 @@
-call g:plug#begin('~/.nvim/plugins')
+call g:plug#begin('${HOME}/.nvim/plugins')
 "Let install Plugins
-source ~/.config/nvim/plugins.vim
+source ${HOME}/.config/nvim/plugins.vim
 call g:plug#end()
-source ~/.config/nvim/settings.vim
+source ${HOME}/.config/nvim/settings.vim

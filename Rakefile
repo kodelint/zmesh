@@ -111,7 +111,6 @@ task :install_vimplug do
   end
 
   Vimplug::update_vimplug
-  run %{ ln -nfs "$HOME/.zmesh/config/nvim/init.vim" "${HOME}/.nvimrc" }
 end
 
 task :default => 'install'

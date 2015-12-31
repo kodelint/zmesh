@@ -21,7 +21,6 @@ task :install => [:submodule_init, :submodules] do
   install_files(Dir.glob('tmux/*')) if want_to_install?('tmux config')
   install_files(Dir.glob('vimify/*')) if want_to_install?('vimification of command line tools')
   if want_to_install?('nvim configuration (highly recommended)')
-	  # install_files(Dir.glob('config'))
     Rake::Task["install_vimplug"].execute
   end
 
@@ -41,14 +40,6 @@ task :install_prezto do
     install_prezto
   end
 end
-
-# desc 'Updates the installation'
-# task :update do
-#   # Rake::Task["vimplug_migration"].execute if needs_migration_to_vimplug?
-#   Rake::Task["install"].execute
-#   #TODO: for now, we do the same as install. But it would be nice
-#   #not to clobber zsh files
-# end
 
 task :submodule_init do
   unless ENV["SKIP_SUBMODULES"]
@@ -71,25 +62,6 @@ task :submodules do
     puts
   end
 end
-
-# desc "Performs migration from pathogen to vimplug"
-# task :vimplug_migration do
-#   puts "======================================================"
-#   puts "Migrating from pathogen to vimplug vim plugin manager. "
-#   puts "This will move the old .vim/bundle directory to"
-#   puts ".vim/bundle.old and replacing all your vim plugins with"
-#   puts "the standard set of plugins. You will then be able to "
-#   puts "manage your vim's plugin configuration by editing the "
-#   puts "file .vim/vimplugs.vim"
-#   puts "======================================================"
-#
-#   Dir.glob(File.join('vim', 'bundle','**')) do |sub_path|
-#     run %{git config -f #{File.join('.git', 'config')} --remove-section submodule.#{sub_path}}
-#     # `git rm --cached #{sub_path}`
-#     FileUtils.rm_rf(File.join('.git', 'modules', sub_path))
-#   end
-#   FileUtils.mv(File.join('vim','bundle'), File.join('vim', 'bundle.old'))
-# end
 
 desc "Runs vimplug installer in a clean nvim environment"
 task :install_vimplug do
@@ -332,11 +304,6 @@ def install_files(files, method = :symlink)
     puts
   end
 end
-
-# def needs_migration_to_vimplug?
-#   File.exists? File.join('vim', 'bundle', 'tpope-vim-pathogen')
-# end
-
 
 # def list_vim_submodules
 #   result=`git submodule -q foreach 'echo $name"||"\`git remote -v | awk "END{print \\\\\$2}"\`'`.select{ |line| line =~ /^vim.bundle/ }.map{ |line| line.split('||') }

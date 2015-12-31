@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+require File.join(File.dirname(__FILE__), 'libs')
+require File.join(File.dirname(__FILE__), 'vimplug')
+
+GitStyleBinary.command do
+  version "vimplug-list 0.1"
+
+  short_desc "List installed neovim plugins"
+
+  banner <<-'EOS'
+      Usage: zmesh-list
+  EOS
+  run do |command|
+    puts "Currently configured plugins:"
+    i=1
+    Vimplug::vimplug_list.each do |plugin|
+      puts "#{i}. #{plugin}"
+      i=i+1
+    end
+  end
+end

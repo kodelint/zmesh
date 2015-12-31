@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require File.join(File.dirname(__FILE__), 'libs')
+
+GitStyleBinary.command do
+  version "vimplug-update 0.1"
+  short_desc "Update all plugins to latest versions from github"
+
+  run do |command|
+    `cd $HOME/.zmesh && rake submodules`
+  end
+
+end

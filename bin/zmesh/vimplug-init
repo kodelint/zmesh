@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require File.join(File.dirname(__FILE__), 'libs')
+
+GitStyleBinary.command do
+  version "vimplug-init 0.1"
+  short_desc "Initialize all submodules. Run this every time you pull a new zmesh version."
+
+  run do |command|
+    `cd "#{$zmesh}" && git submodule update --init`
+  end
+
+end

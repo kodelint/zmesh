@@ -13,7 +13,7 @@
 #   Yan Pritzker <yan@pritzker.ws>
 #   Satyajit Roy <email2sroy@gmail.com>
 
-function prompt_zmesh_precmd {
+function prompt_ohmy_yadr_precmd {
   setopt LOCAL_OPTIONS
   unsetopt XTRACE KSH_ARRAYS
 
@@ -24,14 +24,14 @@ function prompt_zmesh_precmd {
   fi
 }
 
-function prompt_zmesh_setup {
+function prompt_ohmy_yadr_setup {
   setopt LOCAL_OPTIONS
   unsetopt XTRACE KSH_ARRAYS
   prompt_opts=(cr percent subst)
 
   autoload -Uz add-zsh-hook
 
-  add-zsh-hook precmd prompt_zmesh_precmd
+  add-zsh-hook precmd prompt_ohmy_yadr_precmd
 
   # git
   zstyle ':prezto:module:git:info:added' format "%F{white}+%a %f"
@@ -48,4 +48,4 @@ function prompt_zmesh_setup {
   PROMPT="%F{red}%n%f@%F{green}%m%f %F{yellow}%~%f"'$git_info[prompt]'"%F{yellow}❯❯%F{red}❯❯%F{green}❯❯%f"
 }
 
-prompt_zmesh_setup "$@"
+prompt_ohmy_yadr_setup "$@"

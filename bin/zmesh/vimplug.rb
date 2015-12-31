@@ -26,6 +26,8 @@
 #
    def self.update_vimplug
      system "nvim +PlugInstall +qall"
+     system "echo colorscheme molokai >> ${HOME}/.config/nvim/settings/appearance.nvim"
+     system "echo set background=dark >> ${HOME}/.config/nvim/settings/appearance.nvim"
    end
 #
 #

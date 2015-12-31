@@ -100,7 +100,7 @@ task :install_vimplug do
 
   puts ""
 
-  vimplug_path = File.join( 'config','nvim','autoload')
+  vimplug_path = File.join( '${HOME}','.config','nvim','autoload')
   unless File.exists?(vimplug_path)
     run %{
       sh -c "`curl -fsSl https://raw.githubusercontent.com/git4sroy/nvim-dotfiles/master/install_nvim.sh`"

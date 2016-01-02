@@ -1,4 +1,4 @@
-### ZMESH - forked from (YADR) [https://github.com/skwp/dotfiles.git]
+### ZMESH - forked from [YADR] (https://github.com/skwp/dotfiles.git)
 
 * ZMESH has following changes from YADR:
 _ `neovim` instead `vim`_

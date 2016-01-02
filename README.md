@@ -1,8 +1,8 @@
-### ZMESH - forked from YADR
+### ZMESH - forked from (YADR) [https://github.com/skwp/dotfiles.git]
 
 * ZMESH has following changes from YADR:
-- `neovim` instead `vim`
-- `vim-plug` instead `Vundle`
+_ `neovim` instead `vim`_
+_ `vim-plug` instead `Vundle`_
 
 ```bash
 sh -c "`curl -fsSL https://raw.githubusercontent.com/git4sroy/zmesh/master/install.sh`"

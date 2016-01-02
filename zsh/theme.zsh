@@ -1,1 +1,1 @@
-prompt ohmy_yadr
+prompt zmesh

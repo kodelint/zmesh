@@ -1,7 +1,7 @@
 # Aliases in this file are bash and zsh compatible
 
 # Don't change. The following determines where YADR is installed.
-ohmy_yadr=$HOME/.ohmy_yadr
+zmesh=$HOME/.zmesh
 
 # Get operating system
 platform='unknown'
@@ -36,12 +36,15 @@ alias dnsgrep='${HOME}/Documents/WorkLog/chegg/OPS/chef/tools/dnsgrep'
 alias checkelb='${HOME}/Documents/WorkLog/chegg/OPS/chef/tools/checkElbHealth.sh'
 alias reslovelb='${HOME}/Documents/WorkLog/chegg/OPS/chef/tools/find/findElbByIP.sh'
 
-# YADR support
-alias yav='ohmy_yadr vim-add-plugin'
-alias ydv='ohmy_yadr vim-delete-plugin'
-alias ylv='ohmy_yadr vim-list-plugin'
-alias yup='ohmy_yadr update-plugins'
-alias yip='ohmy_yadr init-plugins'
+# ZMESH support
+alias zav='zmesh nvim-add-plugin'
+alias zdv='zmesh nvim-delete-plugin'
+alias zlv='zmesh nvim-list-plugin'
+alias zup='zmesh update-plugins'
+alias zip='zmesh init-plugins'
+
+#nvim
+alias nv='nvim'
 
 # PS
 alias psa="ps aux"
@@ -69,28 +72,28 @@ alias lsg='ll | grep'
 
 # Alias Editing
 TRAPHUP() {
-  source $ohmy_yadr/zsh/aliases.zsh
+  source ${zmesh}/zsh/aliases.zsh
 }
 
-alias ae='vim $ohmy_yadr/zsh/aliases.zsh' #alias edit
-alias ar='source $ohmy_yadr/zsh/aliases.zsh'  #alias reload
+alias ae='nvim ${zmesh}/zsh/aliases.zsh' #alias edit
+alias ar='source ${zmesh}/zsh/aliases.zsh'  #alias reload
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
 
-# vim using
-mvim --version > /dev/null 2>&1
+# nvim using
+mnvim --version > /dev/null 2>&1
 MACVIM_INSTALLED=$?
 if [ $MACVIM_INSTALLED -eq 0 ]; then
-  alias vim="mvim -v"
+  alias nvim="mnvim -v"
 fi
 
-# mimic vim functions
+# mimic nvim functions
 alias :q='exit'
 
-# vimrc editing
-alias ve='vim ~/.vimrc'
+# nvimrc editing
+alias ve='nvim ~/.nvimrc'
 
 # zsh profile editing
-alias ze='vim ~/.zshrc'
+alias ze='nvim ~/.zshrc'
 
 # Git Aliases
 alias gs='git status'
@@ -101,7 +104,7 @@ alias gsa='git stash apply'
 alias gsh='git show'
 alias gshw='git show'
 alias gshow='git show'
-alias gi='vim .gitignore'
+alias gi='nvim .gitignore'
 alias gcm='git ci -m'
 alias gcim='git ci -m'
 alias gci='git ci'

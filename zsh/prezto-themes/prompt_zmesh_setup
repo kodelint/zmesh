@@ -34,9 +34,9 @@ function prompt_zmesh_setup {
   add-zsh-hook precmd prompt_zmesh_precmd
 
   # git
-  zstyle ':prezto:module:git:info:added' format "%F{white}+%a %f"
-  zstyle ':prezto:module:git:info:branch' format "%F{green}⭠ %b%f"
-  zstyle ':prezto:module:git:info:deleted' format "%F{magenta}✖d %f"
+  zstyle ':prezto:module:git:info:added' format "%F{white} +%a %f"
+  zstyle ':prezto:module:git:info:branch' format "%F{green}%b%f"
+  zstyle ':prezto:module:git:info:deleted' format "%F{magenta} ✖d %f"
   zstyle ':prezto:module:git:info:modified' format "%F{cyan} ✱%m%f"
   zstyle ':prezto:module:git:info:stashed' format "%F{blue} ✭%f"
   zstyle ':prezto:module:git:info:unmerged' format "%F{yellow} ⚡%f"

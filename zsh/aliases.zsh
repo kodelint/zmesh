@@ -37,11 +37,11 @@ alias checkelb='${HOME}/Documents/WorkLog/chegg/OPS/chef/tools/checkElbHealth.sh
 alias reslovelb='${HOME}/Documents/WorkLog/chegg/OPS/chef/tools/find/findElbByIP.sh'
 
 # ZMESH support
-alias zav='zmesh nvim-add-plugin'
-alias zdv='zmesh nvim-delete-plugin'
-alias zlv='zmesh nvim-list-plugin'
-alias zup='zmesh update-plugins'
-alias zip='zmesh init-plugins'
+alias zav='zmesh vimplug-add'
+alias zdv='zmesh vimplug-delete'
+alias zlv='zmesh vimplug-list'
+alias zup='zmesh vimplug-update'
+alias zip='zmesh vimplug-init'
 
 #nvim
 alias nv='nvim'

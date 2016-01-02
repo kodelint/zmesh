@@ -111,7 +111,7 @@
 [core]
   autocrlf = false
   editor = vim
-  excludesfile = ~/.ohmy_yadr/git/gitignore
+  excludesfile = ~/.zmesh/git/gitignore
 [advice]
   statusHints = false
 [diff]

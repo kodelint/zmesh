@@ -292,8 +292,8 @@ def install_files(files, method = :symlink)
     end
 
     # Temporary solution until we find a way to allow customization
-    # This modifies zshrc to load all of ohmy_yadr's zsh extensions.
-    # Eventually ohmy_yadr's zsh extensions should be ported to prezto modules.
+    # This modifies zshrc to load all of zmesh's zsh extensions.
+    # Eventually zmesh's zsh extensions should be ported to prezto modules.
     if file == 'zshrc'
       File.open(target, 'a') do |zshrc|
         zshrc.puts('for config_file ($HOME/.zmesh/zsh/*.zsh) source $config_file')

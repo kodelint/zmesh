@@ -19,6 +19,7 @@ alias bastion5='ssh bastion5'
 alias monprod='ssh nagios.prod2'
 alias montest='ssh icinga-satellite-a0ec9365.test3'
 alias cron1='ssh aws-cron1.prod2'
+alias cracked='ssh 10.74.169.50'
 
 alias mygit='cd ${HOME}/Dropbox/Personal/mygit'
 alias cchef='cd ${HOME}/Dropbox/Chegg/WorkLog/chegg/OPS/chef'

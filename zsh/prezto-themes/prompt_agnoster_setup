@@ -27,6 +27,7 @@
 
 CURRENT_BG='NONE'
 SEGMENT_SEPARATOR='\ue0b0'
+#SEGMENT_SEPARATOR='\ue0c0'
 
 # Customizations
 

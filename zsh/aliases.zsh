@@ -93,10 +93,11 @@ fi
 alias :q='exit'
 
 # nvimrc editing
-alias ve='nvim ~/.nvimrc'
+alias ve='nvim ${HOME}/.config/nvim/settings/general.nvim'
 
 # zsh profile editing
-alias ze='nvim ~/.zshrc'
+alias ze='nvim ${HOME}/.zpreztorc'
+alias zr='source ${HOME}/.zpreztorc'
 
 # Git Aliases
 alias gs='git status'
@@ -198,15 +199,6 @@ alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 
 
 alias rdm='rake db:migrate'
 alias rdmr='rake db:migrate:redo'
-
-# Zeus
-alias zs='zeus server'
-alias zc='zeus console'
-alias zr='zeus rspec'
-alias zrc='zeus rails c'
-alias zrs='zeus rails s'
-alias zrdbm='zeus rake db:migrate'
-alias zrdbtp='zeus rake db:test:prepare'
 
 # Rspec
 alias rs='rspec spec'

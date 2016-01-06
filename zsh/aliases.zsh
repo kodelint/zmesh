@@ -30,6 +30,8 @@ alias intern='cd ${HOME}/Dropbox/Chegg/WorkLog/chegg/internships'
 alias odin='cd ${HOME}/Dropbox/Chegg/WorkLog/pi/odin-qa/core/src/test/scripts'
 alias apigee='cd ${HOME}/Dropbox/Chegg/WorkLog/apigee'
 alias mychef='cd ${HOME}/Dropbox/Chegg/WorkLog/chegg/mychef'
+alias github='cd ${HOME}/Dropbox/Personal/mygit/github'
+alias bb='cd ${HOME}/Dropbox/Personal/mygit/bitbucket'
 
 
 # Commands

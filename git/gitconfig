@@ -111,7 +111,7 @@
 [core]
   autocrlf = false
   editor = vim
-  excludesfile = ~/.zmesh/git/gitignore
+	excludesfile = /Users/sroy/.zmesh/git/gitignore
 [advice]
   statusHints = false
 [diff]

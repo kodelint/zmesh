@@ -1,3 +1,4 @@
+#encoding: utf-8
 require 'rake'
 require 'fileutils'
 require File.join(File.dirname(__FILE__), 'bin', 'zmesh', 'vimplug')

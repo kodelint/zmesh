@@ -7,10 +7,12 @@
 ╚══════╝╚═╝     ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝
 ```
 
-##### __ZMESH__ - forked from [YADR] (https://github.com/skwp/dotfiles.git), Another attempt to create complete framework with `ZSH`,`NeoVim`,`iTerm2`,`git` etc with `vim-plug` and `neovim`.
-##### Most of settings has been borrowed from [YADR] (https://github.com/skwp/dotfiles.git). So Thanks to [skwp](https://github.com/skwp)!!
+* Another attempt to create complete framework with `ZSH`,`NeoVim`,`iTerm2`,`git`, `Powerline fonts`, `ctags` etc with `vim-plug` and `neovim`.
+* __ZMESH__ - forked from [YADR](https://github.com/skwp/dotfiles.git).
 
-* ZMESH has following changes from YADR:
+* Most of settings has been borrowed from [YADR](https://github.com/skwp/dotfiles.git). So Thanks to [skwp](https://github.com/skwp) for creating this awesome framework !!
+
+* ZMESH has following changes from [YADR](https://github.com/skwp/dotfiles.git):
 * `neovim` instead `vim`
 * `vim-plug` instead `Vundle`
 
@@ -27,5 +29,5 @@ sh -c "`curl -fsSL https://raw.githubusercontent.com/git4sroy/zmesh/master/insta
 * This is how nvim looks
 <img src=http://i.imgur.com/xJ9SLLm.jpg>
 
-* NERDtree 
+* NERDtree
 <img src=http://i.imgur.com/uQwpMUG.jpg>

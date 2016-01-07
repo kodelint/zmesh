@@ -75,12 +75,12 @@ task :install_vimplug do
 
   vimplug_path = File.join( '${HOME}','.config','nvim','autoload')
   unless File.exists?(vimplug_path)
-    Vimplug::update_vimplug
-#    run %{
+    run %{
+			ln -nfs "${HOME}/.zmesh/config" "${HOME}/.config" 
 #      sh -c "`curl -fsSl https://raw.githubusercontent.com/git4sroy/nvim-dotfiles/master/install_nvim.sh`"
-#    }
+    }
   end
-
+  Vimplug::update_vimplug
 end
 
 task :default => 'install'

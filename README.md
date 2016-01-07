@@ -7,13 +7,9 @@
 ╚══════╝╚═╝     ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝
 ```
 
-<<<<<<< HEAD
 ##### __ZMESH__ - forked from [YADR] (https://github.com/skwp/dotfiles.git), Another attempt to create complete framework with `ZSH`,`NeoVim`,`iTerm2`,`git` etc with `vim-plug` and `neovim`.
 ##### Most of settings has been borrowed from [YADR] (https://github.com/skwp/dotfiles.git). So Thanks to [skwp](https://github.com/skwp)!!
-=======
-### ZMESH - forked from [YADR] (https://github.com/skwp/dotfiles.git), Another attempt to create complete framework with `ZSH`,`NeoVim`,`iTerm2`,`git` etc with `vim-plug` and `neovim`.
-### Most of settings has been borrowed from [YADR] (https://github.com/skwp/dotfiles.git). So Thanks to [skwp](https://github.com/skwp)!!
->>>>>>> refs/remotes/origin/master
+
 * ZMESH has following changes from YADR:
 * `neovim` instead `vim`
 * `vim-plug` instead `Vundle`

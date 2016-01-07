@@ -13,8 +13,8 @@
 * Most of settings has been borrowed from [YADR](https://github.com/skwp/dotfiles.git). So Thanks to [skwp](https://github.com/skwp) for creating this awesome framework !!
 
 * ZMESH has following changes from [YADR](https://github.com/skwp/dotfiles.git):
-* `neovim` instead `vim`
-* `vim-plug` instead `Vundle`
+* `neovim` instead of `vim`
+* `vim-plug` instead of `vundle`
 
 ```bash
 sh -c "`curl -fsSL https://raw.githubusercontent.com/git4sroy/zmesh/master/install.sh`"
@@ -26,8 +26,11 @@ about each one, use:
 ```bash
 sh -c "`curl -fsSL https://raw.githubusercontent.com/git4sroy/zmesh/master/install.sh`" -s ask
 ```
-* This is how nvim looks
-<img src=http://i.imgur.com/xJ9SLLm.jpg>
+* __NeoVIM__
 
-* NERDtree
-<img src=http://i.imgur.com/uQwpMUG.jpg>
+   <img src=http://i.imgur.com/xJ9SLLm.jpg>
+
+
+* __NERDtree__
+
+   <img src=http://i.imgur.com/uQwpMUG.jpg>

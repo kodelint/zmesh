@@ -19,6 +19,7 @@ alias bastion5='ssh bastion5'
 alias monprod='ssh nagios.prod2'
 alias montest='ssh icinga-satellite-a0ec9365.test3'
 alias cron1='ssh aws-cron1.prod2'
+alias cracked='ssh 10.74.169.50'
 
 alias mygit='cd ${HOME}/Dropbox/Personal/mygit'
 alias cchef='cd ${HOME}/Dropbox/Chegg/WorkLog/chegg/OPS/chef'
@@ -29,6 +30,8 @@ alias intern='cd ${HOME}/Dropbox/Chegg/WorkLog/chegg/internships'
 alias odin='cd ${HOME}/Dropbox/Chegg/WorkLog/pi/odin-qa/core/src/test/scripts'
 alias apigee='cd ${HOME}/Dropbox/Chegg/WorkLog/apigee'
 alias mychef='cd ${HOME}/Dropbox/Chegg/WorkLog/chegg/mychef'
+alias github='cd ${HOME}/Dropbox/Personal/mygit/github'
+alias bb='cd ${HOME}/Dropbox/Personal/mygit/bitbucket'
 
 
 # Commands
@@ -90,10 +93,11 @@ fi
 alias :q='exit'
 
 # nvimrc editing
-alias ve='nvim ~/.nvimrc'
+alias ve='nvim ${HOME}/.config/nvim/settings/general.nvim'
 
 # zsh profile editing
-alias ze='nvim ~/.zshrc'
+alias ze='nvim ${HOME}/.zpreztorc'
+alias zr='source ${HOME}/.zpreztorc'
 
 # Git Aliases
 alias gs='git status'
@@ -195,15 +199,6 @@ alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 
 
 alias rdm='rake db:migrate'
 alias rdmr='rake db:migrate:redo'
-
-# Zeus
-alias zs='zeus server'
-alias zc='zeus console'
-alias zr='zeus rspec'
-alias zrc='zeus rails c'
-alias zrs='zeus rails s'
-alias zrdbm='zeus rake db:migrate'
-alias zrdbtp='zeus rake db:test:prepare'
 
 # Rspec
 alias rs='rspec spec'

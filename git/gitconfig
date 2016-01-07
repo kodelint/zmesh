@@ -110,8 +110,8 @@
   default = upstream
 [core]
   autocrlf = false
-  editor = vim
-  excludesfile = ~/.zmesh/git/gitignore
+  editor = nvim
+	excludesfile = /Users/sroy/.zmesh/git/gitignore
 [advice]
   statusHints = false
 [diff]

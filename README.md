@@ -15,4 +15,4 @@ about each one, use:
 sh -c "`curl -fsSL https://raw.githubusercontent.com/git4sroy/zmesh/master/install.sh`" -s ask
 ```
 * This is how nvim looks
-<img http://i.imgur.com/xJ9SLLm.jpg>
+<img src=http://i.imgur.com/xJ9SLLm.jpg>

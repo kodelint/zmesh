@@ -16,3 +16,6 @@ sh -c "`curl -fsSL https://raw.githubusercontent.com/git4sroy/zmesh/master/insta
 ```
 * This is how nvim looks
 <img src=http://i.imgur.com/xJ9SLLm.jpg>
+
+* NERDtree 
+<img src=http://i.imgur.com/uQwpMUG.jpg>

@@ -38,6 +38,7 @@ alias bb='cd ${HOME}/Dropbox/Personal/mygit/bitbucket'
 alias dnsgrep='${HOME}/Documents/WorkLog/chegg/OPS/chef/tools/dnsgrep'
 alias checkelb='${HOME}/Documents/WorkLog/chegg/OPS/chef/tools/checkElbHealth.sh'
 alias reslovelb='${HOME}/Documents/WorkLog/chegg/OPS/chef/tools/find/findElbByIP.sh'
+alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say flushed'
 
 # ZMESH support
 alias zav='zmesh vimplug-add'

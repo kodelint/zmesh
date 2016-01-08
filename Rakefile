@@ -1,3 +1,5 @@
+#encoding: utf-8
+
 require 'rake'
 require 'fileutils'
 require File.join(File.dirname(__FILE__), 'bin', 'zmesh', 'vimplug')
@@ -21,6 +23,7 @@ task :install => [:submodule_init, :submodules] do
   install_files(Dir.glob('tmux/*')) if want_to_install?('tmux config')
   install_files(Dir.glob('vimify/*')) if want_to_install?('vimification of command line tools')
   if want_to_install?('nvim configuration (highly recommended)')
+		install_files(Dir.glob('config'))
     Rake::Task["install_vimplug"].execute
   end
 
@@ -75,10 +78,9 @@ task :install_vimplug do
   vimplug_path = File.join( '${HOME}','.config','nvim','autoload')
   unless File.exists?(vimplug_path)
     run %{
-      sh -c "`curl -fsSl https://raw.githubusercontent.com/git4sroy/nvim-dotfiles/master/install_nvim.sh`"
+			ln -nfs "${HOME}/.zmesh/config" "${HOME}/.config" 
     }
   end
-
   Vimplug::update_vimplug
 end
 

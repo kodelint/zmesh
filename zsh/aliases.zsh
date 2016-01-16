@@ -15,7 +15,7 @@ fi
 #move around
 alias bastion01='ssh bastion01.core2'
 alias bastion02='ssh bastion02.test3'
-alias bastion5='ssh bastion5'
+alias bastion='ssh bastion'
 alias monprod='ssh nagios.prod2'
 alias montest='ssh icinga-satellite-a0ec9365.test3'
 alias cron1='ssh aws-cron1.prod2'
@@ -82,7 +82,7 @@ TRAPHUP() {
 alias ae='nvim ${zmesh}/zsh/aliases.zsh' #alias edit
 alias ar='source ${zmesh}/zsh/aliases.zsh'  #alias reload
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
-
+alias se='nvim ${HOME}/.ssh/config'
 # nvim using
 mnvim --version > /dev/null 2>&1
 MACVIM_INSTALLED=$?

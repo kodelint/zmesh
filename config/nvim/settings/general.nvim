@@ -1,5 +1,6 @@
 set clipboard+=unnamedplus
 set cursorline                  "Get a cursor line"
+set number
 set relativenumber
 set history=1000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom

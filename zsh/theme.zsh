@@ -1,2 +1,1 @@
-#prompt zmesh
-prompt flashy
+prompt zmesh

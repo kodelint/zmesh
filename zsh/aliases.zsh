@@ -32,11 +32,12 @@ alias apigee='cd ${HOME}/Dropbox/Chegg/WorkLog/apigee'
 alias mychef='cd ${HOME}/Dropbox/Chegg/WorkLog/chegg/mychef'
 alias github='cd ${HOME}/Dropbox/Personal/mygit/github'
 alias bb='cd ${HOME}/Dropbox/Personal/mygit/bitbucket'
-
+alias apigeeconf='cd ${HOME}/Dropbox/Chegg/WorkLog/pi/apigee-configuration'
+alias of='open -a Finder ./'
 
 # Commands
 alias dnsgrep='${HOME}/Documents/WorkLog/chegg/OPS/chef/tools/dnsgrep'
-alias checkelb='${HOME}/Documents/WorkLog/chegg/OPS/chef/tools/checkElbHealth.sh'
+alias checkelb='${HOME}/Dropbox/Chegg/WorkLog/chegg/OPS/chef/tools/aws_utils/checkElbHealth.sh'
 alias reslovelb='${HOME}/Documents/WorkLog/chegg/OPS/chef/tools/find/findElbByIP.sh'
 alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say flushed'
 alias gemu='rvm all do gem install'
@@ -82,11 +83,6 @@ alias ar='source ${zmesh}/zsh/aliases.zsh'  #alias reload
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
 alias se='nvim ${HOME}/.ssh/config'
 # nvim using
-mnvim --version > /dev/null 2>&1
-MACVIM_INSTALLED=$?
-if [ $MACVIM_INSTALLED -eq 0 ]; then
-  alias nvim="mnvim -v"
-fi
 
 # mimic nvim functions
 alias :q='exit'
@@ -95,7 +91,7 @@ alias :q='exit'
 alias ve='nvim ${HOME}/.config/nvim/settings/general.nvim'
 
 # zsh profile editing
-alias ze='nvim ${HOME}/.zpreztorc'
+alias ze='nvim ${zmesh}/zsh/exports.zsh'
 alias zr='source ${HOME}/.zpreztorc'
 
 # Git Aliases

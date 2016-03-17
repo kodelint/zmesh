@@ -36,6 +36,10 @@ nnoremap ,n :set number! nonumber?<CR>
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 nnoremap ,sp :echo expand("%:p")<CR>
 
-"Ruvy indentation
+"Ruby indentation
 "====================
 au FileType ruby set softtabstop=2 tabstop=2 shiftwidth=2
+
+"deoplatete complete
+"====================
+let g:deoplete#enable_at_startup = 1

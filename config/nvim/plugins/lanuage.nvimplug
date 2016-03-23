@@ -1,5 +1,4 @@
 Plug 'sheerun/vim-polyglot'
-Plug 'garbas/vim-snipmate'
 Plug 'honza/vim-snippets'
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'https://github.com/benekastah/neomake'

@@ -50,6 +50,7 @@ alias zip='zmesh vimplug-init'
 
 #nvim
 alias nv='nvim'
+alias vim='nvim'
 
 # PS
 alias psa="ps aux"

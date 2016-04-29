@@ -59,7 +59,7 @@ task :submodules do
 
     run %{
       cd $HOME/.zmesh
-      git submodule update --recursive
+      git submodule foreach git pull origin master
       git clean -df
     }
     puts

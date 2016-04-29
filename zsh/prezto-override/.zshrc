@@ -1,0 +1,1 @@
+/Users/sroy/.zmesh/zsh/prezto/runcoms/zshrc

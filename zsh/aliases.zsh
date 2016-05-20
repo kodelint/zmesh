@@ -20,7 +20,7 @@ alias monprod='ssh nagios.prod2'
 alias montest='ssh icinga-satellite-a0ec9365.test3'
 alias cron1='ssh aws-cron1.prod2'
 alias cron3='ssh aws-cron3.core2'
-alias cracked='ssh 10.74.169.50'
+alias cracked='ssh 10.74.169.185'
 alias home='ssh home'
 
 alias mygit='cd ${HOME}/Dropbox/Personal/mygit'

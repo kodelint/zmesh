@@ -32,7 +32,6 @@ function prompt_zmesh_setup {
   autoload -Uz add-zsh-hook
 
   add-zsh-hook precmd prompt_zmesh_precmd
-
   # git
   zstyle ':prezto:module:git:info:added' format "%F{white} +%a %f"
   zstyle ':prezto:module:git:info:branch' format "%F{green}%b%f"
@@ -44,8 +43,9 @@ function prompt_zmesh_setup {
   zstyle ':prezto:module:git:info:behind' format "%F{black} ⬇%f"
   zstyle ':prezto:module:git:info:untracked' format "%F{magenta} ±%u%f"
   zstyle ':prezto:module:git:info:keys' format 'prompt' '(%a%b%d%m%S%U%A%B%u%R)'
+  zstyle ':prezto:module:python:info:virtualenv' format 'virtualenv:%v'
 
-  PROMPT="%F{red}%n%f@%F{green}%m%f %F{yellow}%~%f"'$git_info[prompt]'"%F{yellow}❯❯%F{red}❯❯%F{green}❯❯%f"
+  PROMPT="$python_info[virtualenv] %F{red}%n%f@%F{green}%m%f %F{yellow}%~%f"'$git_info[prompt]'"%F{yellow}❯❯%F{red}❯❯%F{green}❯❯%f"
 }
 
 prompt_zmesh_setup "$@"

@@ -1,1 +1,1 @@
-prompt zmesh
+prompt agnoster

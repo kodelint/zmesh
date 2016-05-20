@@ -36,3 +36,7 @@ let g:solarized_visibility= "high"
 "set background=dark
 colorscheme jellybeans
 set background=dark
+colorscheme molokai
+set background=dark
+colorscheme molokai
+set background=dark

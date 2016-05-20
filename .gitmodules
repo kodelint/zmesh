@@ -1,6 +1,7 @@
 [submodule "zsh/prezto"]
 	path = zsh/prezto
 	url = https://github.com/sorin-ionescu/prezto.git
+[submodule "config/zsh-autosuggestions"]
         path = config/zsh-autosuggestions
         url = https://github.com/tarruda/zsh-autosuggestions.git
   ignore = dirty

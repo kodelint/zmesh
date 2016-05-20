@@ -82,6 +82,14 @@ prompt_end() {
   CURRENT_BG=''
 }
 
+prompt_virtualenv() {
+  local virtualenv_path="$VIRTUAL_ENV"
+  if [[ -n $virtualenv_path ]]; then
+    prompt_segment yellow black " $(basename $virtualenv_path)"
+  fi
+
+}
+
 ### Prompt components
 # Each component will draw itself, and hide itself if no information needs to be shown
 
@@ -138,6 +146,7 @@ prompt_status() {
 build_prompt() {
   RETVAL=$?
   prompt_status
+	prompt_virtualenv
   prompt_context
   prompt_dir
   prompt_git

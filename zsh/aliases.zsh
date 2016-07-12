@@ -33,6 +33,7 @@ alias reslovelb='${HOME}/Google\ Drive/Personal/Chef/tools/findElbByIP.sh'
 alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say flushed'
 alias networkreset='sudo networksetup -setv4off Wi-Fi; sudo networksetup -setdhcp Wi-Fi'
 alias gemu='rvm all do gem install'
+alias uprepo='ruby ${HOME}/Google\ Drive/Personal/myTools/ruby/update_repos.rb'
 # ZMESH support
 alias zav='zmesh vimplug-add'
 alias zdv='zmesh vimplug-delete'

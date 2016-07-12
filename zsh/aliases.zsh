@@ -13,34 +13,24 @@ elif [[ $unamestr == 'Darwin' ]]; then
 fi
 
 #move around
-alias bastion01='ssh bastion01.core2'
-alias bastion02='ssh bastion02.test3'
-alias bastion='ssh bastion'
-alias monprod='ssh nagios.prod2'
-alias montest='ssh icinga-satellite-a0ec9365.test3'
-alias cron1='ssh aws-cron1.prod2'
-alias cron3='ssh aws-cron3.core2'
-alias cracked='ssh 10.74.169.185'
-alias home='ssh home'
+alias home='ssh Home'
 
-alias mygit='cd ${HOME}/Dropbox/Personal/mygit'
-alias cchef='cd ${HOME}/Dropbox/Chegg/WorkLog/chegg/OPS/chef'
-alias ctools='cd ${HOME}/Dropbox/Chegg/WorkLog/chegg/OPS/chef/tools'
-alias tools='cd ${HOME}/Dropbox/Chegg/WorkLog/chegg/tools'
-alias edu='cd ${HOME}/Dropbox/Chegg/WorkLog/chegg/insta_edu'
-alias intern='cd ${HOME}/Dropbox/Chegg/WorkLog/chegg/internships'
-alias odin='cd ${HOME}/Dropbox/Chegg/WorkLog/pi/odin-qa/core/src/test/scripts'
-alias apigee='cd ${HOME}/Dropbox/Chegg/WorkLog/apigee'
-alias mychef='cd ${HOME}/Dropbox/Chegg/WorkLog/chegg/mychef'
-alias github='cd ${HOME}/Dropbox/Personal/mygit/github'
-alias bb='cd ${HOME}/Dropbox/Personal/mygit/bitbucket'
-alias apigeeconf='cd ${HOME}/Dropbox/Chegg/WorkLog/pi/apigee-configuration'
+alias mygit='cd ${HOME}/Dropbox/Personal/mygit/git4sroy'
+alias wchef='cd ${HOME}/Google\ Drive/Work/repos/chef'
+alias muppet='cd ${HOME}/Google\ Drive/Work/repos/muppet'
+alias wansible='cd ${HOME}/Google\ Drive/Work/repos/ansible'
+alias mrd='cd ${HOME}/Google\ Drive/Work/repos/messaging-rabbitmq-docker'
+alias wtools='cd ${HOME}/Google\ Drive/Personal/myTools'
+alias lag='cd ${HOME}/Google\ Drive/Work/repos/LAG'
+alias work='cd ${HOME}/Google\ Drive/Work'
+alias supercap='cd ${HOME}/Google\ Drive/Work/repos/supercap'
 alias of='open -a Finder ./'
+alias gemi='rvm gem install'
 
 # Commands
-alias dnsgrep='${HOME}/Documents/WorkLog/chegg/OPS/chef/tools/dnsgrep'
-alias checkelb='${HOME}/Dropbox/Chegg/WorkLog/chegg/OPS/chef/tools/aws_utils/checkElbHealth.sh'
-alias reslovelb='${HOME}/Documents/WorkLog/chegg/OPS/chef/tools/find/findElbByIP.sh'
+alias dnsgrep='${HOME}/Google\ Drive/Personal/Chef/tools/dnsgrep'
+alias checkelb='${HOME}/Google\ Drive/Personal/Chef/tools/dnsgrepcheckElbHealth.sh'
+alias reslovelb='${HOME}/Google\ Drive/Personal/Chef/tools/findElbByIP.sh'
 alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say flushed'
 alias networkreset='sudo networksetup -setv4off Wi-Fi; sudo networksetup -setdhcp Wi-Fi'
 alias gemu='rvm all do gem install'
@@ -85,7 +75,7 @@ TRAPHUP() {
 alias ae='nvim ${zmesh}/zsh/aliases.zsh' #alias edit
 alias ar='source ${zmesh}/zsh/aliases.zsh'  #alias reload
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
-alias se='nvim ${HOME}/.ssh/config'
+alias se='subl ${HOME}/.ssh/config'
 # nvim using
 
 # mimic nvim functions
@@ -183,15 +173,7 @@ alias todo='open nvalt://find/todo'
 
 # Forward port 80 to 3000
 alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 80 in'
-#
-# Rspec
-alias rs='rspec spec'
-alias sr='spring rspec'
-alias src='spring rails c'
-alias srgm='spring rails g migration'
-alias srdm='spring rake db:migrate'
-alias srdt='spring rake db:migrate'
-alias srdmt='spring rake db:migrate db:test:prepare'
+
 
 
 # spb = sprintly branch - create a branch automatically based on the bug you're working on

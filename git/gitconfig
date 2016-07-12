@@ -111,7 +111,7 @@
 [core]
   autocrlf = false
   editor = nvim
-	excludesfile = /Users/sroy/.zmesh/git/gitignore
+	excludesfile = /Users/satyajit.roy/.gitignore_global
 [advice]
   statusHints = false
 [diff]
@@ -126,13 +126,19 @@
 [include]
   path = .gitconfig.user
 [difftool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/araxiscompare-w.sh -2 \"$LOCAL\" \"$REMOTE\"
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/araxisgitmerge-w.sh \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\"
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
 	name = Satyajit Roy
-	email = sroy@chegg.com
+	email = satyajit.roy@workday.com
 [gc]
 	auto = 1
+[commit]
+	template = /Users/satyajit.roy/.stCommitMsg
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

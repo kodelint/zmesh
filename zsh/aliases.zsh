@@ -25,7 +25,6 @@ alias lag='cd ${HOME}/Google\ Drive/Work/repos/LAG'
 alias work='cd ${HOME}/Google\ Drive/Work'
 alias supercap='cd ${HOME}/Google\ Drive/Work/repos/supercap'
 alias of='open -a Finder ./'
-alias gemi='rvm gem install'
 
 # Commands
 alias dnsgrep='${HOME}/Google\ Drive/Personal/Chef/tools/dnsgrep'

@@ -24,6 +24,8 @@ alias wtools='cd ${HOME}/Google\ Drive/Personal/myTools'
 alias lag='cd ${HOME}/Google\ Drive/Work/repos/LAG'
 alias work='cd ${HOME}/Google\ Drive/Work'
 alias supercap='cd ${HOME}/Google\ Drive/Work/repos/supercap'
+alias repos='cd ${HOME}/Google\ Drive/Work/repos'
+alias info='open file:/Users/satyajit.roy/Google\ Drive/Work/repos/devops-tools/landing-page/index.html'
 alias of='open -a Finder ./'
 
 # Commands

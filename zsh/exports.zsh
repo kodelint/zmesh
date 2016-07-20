@@ -15,3 +15,4 @@ export nprds='pdxnprd atlnprd dubnprd'
 export prds='pdxprd ashprd dubprd'
 source /Users/satyajit.roy/.rvm/scripts/rvm
 source /usr/local/bin/virtualenvwrapper.sh
+source /Users/satyajit.roy/liquidprompt/liquidprompt.plugin.zsh

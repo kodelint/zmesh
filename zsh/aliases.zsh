@@ -25,6 +25,8 @@ alias lag='cd ${HOME}/Google\ Drive/Work/repos/LAG'
 alias work='cd ${HOME}/Google\ Drive/Work'
 alias supercap='cd ${HOME}/Google\ Drive/Work/repos/supercap'
 alias repos='cd ${HOME}/Google\ Drive/Work/repos'
+alias dpm='cd ${HOME}/Google\ Drive/Work/repos/dpm'
+alias digger='ruby ${HOME}/Google\ Drive/Work/repos/devops-tools/digger.rb'
 alias info='open file:/Users/satyajit.roy/Google\ Drive/Work/repos/devops-tools/landing-page/index.html'
 alias of='open -a Finder ./'
 
@@ -36,6 +38,7 @@ alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say flus
 alias networkreset='sudo networksetup -setv4off Wi-Fi; sudo networksetup -setdhcp Wi-Fi'
 alias gemu='rvm all do gem install'
 alias uprepo='ruby ${HOME}/Google\ Drive/Personal/myTools/ruby/update_repos.rb'
+alias rebase='git checkout localchanges; sh rebase.sh'
 # ZMESH support
 alias zav='zmesh vimplug-add'
 alias zdv='zmesh vimplug-delete'

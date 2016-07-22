@@ -4,4 +4,7 @@
 [submodule "config/zsh-autosuggestions"]
         path = config/zsh-autosuggestions
         url = https://github.com/tarruda/zsh-autosuggestions.git
-  ignore = dirty
+	ignore = dirty
+[submodule "zsh/liquidprompt"]
+	path = zsh/liquidprompt
+	url = https://github.com/nojhan/liquidprompt.git

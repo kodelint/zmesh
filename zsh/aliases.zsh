@@ -30,6 +30,7 @@ alias digger='ruby ${HOME}/Google\ Drive/Work/repos/devops-tools/digger.rb'
 alias info='open file:/Users/satyajit.roy/Google\ Drive/Work/repos/devops-tools/landing-page/index.html'
 alias of='open -a Finder ./'
 alias remote='/usr/local/bin/ssh_with_tokencode'
+alias you='youtube-dl --extract-audio --audio-format mp3'
 # Commands
 alias dnsgrep='${HOME}/Google\ Drive/Personal/Chef/tools/dnsgrep'
 alias checkelb='${HOME}/Google\ Drive/Personal/Chef/tools/dnsgrepcheckElbHealth.sh'
@@ -47,7 +48,7 @@ alias zup='zmesh vimplug-update'
 alias zip='zmesh vimplug-init'
 
 #nvim
-alias nv='nvim'
+alias nv='workon nvim;nvim'
 alias vim='nvim'
 
 # PS

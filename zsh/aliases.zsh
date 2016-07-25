@@ -48,7 +48,7 @@ alias zup='zmesh vimplug-update'
 alias zip='zmesh vimplug-init'
 
 #nvim
-alias nv='workon nvim;nvim'
+alias nv='nvim'
 alias vim='nvim'
 
 # PS
@@ -88,7 +88,7 @@ alias se='subl ${HOME}/.ssh/config'
 alias :q='exit'
 
 # nvimrc editing
-alias ve='nvim ${HOME}/.config/nvim/settings/general.nvim'
+alias ne='nvim ${HOME}/.config/nvim/settings/general.nvim'
 
 # zsh profile editing
 alias ze='nvim ${zmesh}/zsh/exports.zsh'

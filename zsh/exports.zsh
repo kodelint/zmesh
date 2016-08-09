@@ -1,5 +1,5 @@
 export DEFAULT_USER=`whoami`
-export PIP_REQUIRE_VIRTUALENV=true
+#export PIP_REQUIRE_VIRTUALENV=true
 export WORKON_HOME=~/.virtualenvs
 # why type 11 characters when you can type 2?
 alias be='bundle exec'
@@ -11,4 +11,4 @@ export nprds='pdxnprd atlnprd dubnprd'
 export prds='pdxprd ashprd dubprd'
 source /Users/satyajit.roy/.rvm/scripts/rvm
 source /usr/local/bin/virtualenvwrapper.sh
-source $HOME/.zmesh/zsh/liquidprompt/liquidprompt.plugin.zsh
+[[ $- = *i* ]] && source $HOME/.zmesh/zsh/liquidprompt/liquidprompt.plugin.zsh

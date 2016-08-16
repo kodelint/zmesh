@@ -13,30 +13,12 @@ elif [[ $unamestr == 'Darwin' ]]; then
 fi
 
 #move around
-alias home='ssh Home'
 
-alias mygit='cd ${HOME}/Dropbox/Personal/mygit/git4sroy'
-alias wchef='cd ${HOME}/Google\ Drive/Work/repos/chef'
-alias muppet='cd ${HOME}/Google\ Drive/Work/repos/dpm/muppet'
-alias wansible='cd ${HOME}/Google\ Drive/Work/repos/ansible'
-alias mrd='cd ${HOME}/Google\ Drive/Work/repos/messaging-rabbitmq-docker'
-alias wtools='cd ${HOME}/Google\ Drive/Personal/myTools'
-alias lag='cd ${HOME}/Google\ Drive/Work/repos/LAG'
-alias work='cd ${HOME}/Google\ Drive/Work'
-alias supercap='cd ${HOME}/Google\ Drive/Work/repos/dpm/supercap'
-alias repos='cd ${HOME}/Google\ Drive/Work/repos'
-alias dpm='cd ${HOME}/Google\ Drive/Work/repos/dpm'
-alias digger='ruby ${HOME}/Google\ Drive/Work/repos/devops-tools/digger.rb'
-alias info='open file:/Users/satyajit.roy/Google\ Drive/Work/repos/devops-tools/landing-page/index.html'
 alias of='open -a Finder ./'
-alias remote='/usr/local/bin/ssh_with_tokencode'
 alias you='youtube-dl --extract-audio --audio-format mp3'
 # Commands
 alias ols="ls -l | sed -e 's/--x/1/g' -e 's/-w-/2/g' -e 's/-wx/3/g' -e 's/r--/4/g' -e 's/r-x/5/g' -e 's/rw-/6/g' -e 's/rwx/7/g' -e 's/---/0/g'"
 alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
-alias dnsgrep='${HOME}/Google\ Drive/Personal/Chef/tools/dnsgrep'
-alias checkelb='${HOME}/Google\ Drive/Personal/Chef/tools/dnsgrepcheckElbHealth.sh'
-alias reslovelb='${HOME}/Google\ Drive/Personal/Chef/tools/findElbByIP.sh'
 alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say flushed'
 alias networkreset='sudo networksetup -setv4off Wi-Fi; sudo networksetup -setdhcp Wi-Fi'
 alias gemu='rvm all do gem update'
@@ -84,7 +66,7 @@ TRAPHUP() {
 alias ae='nvim ${zmesh}/zsh/aliases.zsh' #alias edit
 alias ar='source ${zmesh}/zsh/aliases.zsh'  #alias reload
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
-alias se='subl ${HOME}/.ssh/config'
+alias se='nvim ${HOME}/.ssh/config'
 # nvim using
 
 # mimic nvim functions

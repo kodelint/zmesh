@@ -7,6 +7,8 @@ alias be='bundle exec'
 # e.g. for silo in $silos; do be cap $silo smn deploy:upload_configs; be cap $silo smn deploy:restart; done;
 source /Users/satyajit.roy/.rvm/scripts/rvm
 source /usr/local/bin/virtualenvwrapper.sh
+source /Users/satyajit.roy/Dropbox/Personal/mygit/pexports.zsh
+source /Users/satyajit.roy/Dropbox/Personal/mygit/palias.zsh
 [[ $- = *i* ]] && source $HOME/.zmesh/zsh/liquidprompt/liquidprompt.plugin.zsh
 
 

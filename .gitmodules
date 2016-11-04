@@ -8,6 +8,6 @@
 [submodule "zsh/liquidprompt"]
 	path = zsh/liquidprompt
 	url = https://github.com/nojhan/liquidprompt.git
-[submodule "git/git-extra-commands"]
-	path = git/git-extra-commands
+[submodule "zsh/git-extra-commands"]
+	path = zsh/git-extra-commands
 	url = https://github.com/unixorn/git-extra-commands.git

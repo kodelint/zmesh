@@ -17,14 +17,14 @@
 * `vim-plug` instead of `vundle`
 
 ```bash
-sh -c "`curl -fsSL https://raw.githubusercontent.com/git4sroy/zmesh/master/install.sh`"
+sh -c "`curl -fsSL https://raw.githubusercontent.com/kodelint/zmesh/master/install.sh`"
 ```
 
 * ZMESH will automatically install all of its subcomponents. If you want to be asked
 about each one, use:
 
 ```bash
-sh -c "`curl -fsSL https://raw.githubusercontent.com/git4sroy/zmesh/master/install.sh`" -s ask
+sh -c "`curl -fsSL https://raw.githubusercontent.com/kodelint/zmesh/master/install.sh`" -s ask
 ```
 * __NeoVIM__
 

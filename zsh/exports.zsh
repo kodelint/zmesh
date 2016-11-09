@@ -5,10 +5,8 @@ export WORKON_HOME=~/.virtualenvs
 alias be='bundle exec'
 # useful variables for scripting
 # e.g. for silo in $silos; do be cap $silo smn deploy:upload_configs; be cap $silo smn deploy:restart; done;
-source /Users/satyajit.roy/.rvm/scripts/rvm
+source $HOME/.rvm/scripts/rvm
 source /usr/local/bin/virtualenvwrapper.sh
-source /Users/satyajit.roy/Dropbox/Personal/mygit/pexports.zsh
-source /Users/satyajit.roy/Dropbox/Personal/mygit/palias.zsh
+source $HOME/Dropbox/Personal/mygit/pexports.zsh
+source $HOME/Dropbox/Personal/mygit/palias.zsh
 [[ $- = *i* ]] && source $HOME/.zmesh/zsh/liquidprompt/liquidprompt.plugin.zsh
-
-

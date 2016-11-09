@@ -16,6 +16,7 @@ fi
 
 alias of='open -a Finder ./'
 alias you='youtube-dl --extract-audio --audio-format mp3'
+alias killssh='ps aux|grep ssh | awk '{print $2}' | xargs kill -9'
 # Commands
 alias ols="ls -l | sed -e 's/--x/1/g' -e 's/-w-/2/g' -e 's/-wx/3/g' -e 's/r--/4/g' -e 's/r-x/5/g' -e 's/rw-/6/g' -e 's/rwx/7/g' -e 's/---/0/g'"
 alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'

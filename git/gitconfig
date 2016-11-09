@@ -133,7 +133,7 @@
 	trustExitCode = true
 [user]
 	name = Satyajit Roy
-	email = satyajit.roy@workday.com
+	email = kodelint@gmail.com
 [gc]
 	auto = 1
 [commit]

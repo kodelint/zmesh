@@ -10,5 +10,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 source /Users/`whoami`/Dropbox/Personal/mygit/pexports.zsh
 source /Users/`whoami`/Dropbox/Personal/mygit/palias.zsh
 [[ $- = *i* ]] && source $HOME/.zmesh/zsh/liquidprompt/liquidprompt.plugin.zsh
-source /Users/satyajit.roy/.zmesh/zsh/git-extra-commands/git-extra-commands.plugin.zsh
+source /Users/`whoami`/.zmesh/zsh/git-extra-commands/git-extra-commands.plugin.zsh
 

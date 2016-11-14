@@ -1,13 +1,4 @@
-[submodule "zsh/prezto"]
-	path = zsh/prezto
-	url = https://github.com/sorin-ionescu/prezto
 [submodule "config/zsh-autosuggestions"]
         path = config/zsh-autosuggestions
         url = https://github.com/tarruda/zsh-autosuggestions.git
 	ignore = dirty
-[submodule "zsh/liquidprompt"]
-	path = zsh/liquidprompt
-	url = https://github.com/nojhan/liquidprompt.git
-[submodule "zsh/git-extra-commands"]
-	path = zsh/git-extra-commands
-	url = https://github.com/unixorn/git-extra-commands.git

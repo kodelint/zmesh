@@ -1,4 +1,0 @@
-[submodule "config/zsh-autosuggestions"]
-        path = config/zsh-autosuggestions
-        url = https://github.com/tarruda/zsh-autosuggestions.git
-	ignore = dirty

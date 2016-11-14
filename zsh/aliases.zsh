@@ -24,7 +24,7 @@ alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say flus
 alias networkreset='sudo networksetup -setv4off Wi-Fi; sudo networksetup -setdhcp Wi-Fi'
 alias gemu='rvm all do gem update'
 alias gemi='rvm all do gem install'
-alias uprepo='ruby ${HOME}/Google\ Drive/Personal/myTools/ruby/update_repos.rb'
+alias uprepo='ruby /Users/m535987/Dropbox/Personal/mygit/code/myTools/ruby/update_repos.rb'
 alias rebase='git checkout localchanges; sh rebase.sh'
 # ZMESH support
 alias zav='zmesh vimplug-add'

@@ -331,5 +331,5 @@ def success_msg(action)
   puts "  ███████╗██║ ╚═╝ ██║███████╗███████║██║  ██║"
   puts "  ╚══════╝╚═╝     ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝"
   puts ""
-  puts " ZMESH has been #{action}. Please restart your terminal and vim."
+  puts " ZMESH has been #{action}. Please restart your terminal and neovim."
 end

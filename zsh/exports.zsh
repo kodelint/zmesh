@@ -1,6 +1,6 @@
 export DEFAULT_USER=`whoami`
 #export PIP_REQUIRE_VIRTUALENV=true
-export WORKON_HOME=~/.virtualenvs
+#export WORKON_HOME=~/.virtualenvs
 # why type 11 characters when you can type 2?
 alias be='bundle exec'
 # useful variables for scripting
@@ -17,7 +17,22 @@ source $HOME/.zmesh/zsh/git-extra-commands/git-extra-commands.plugin.zsh
 export PYENV_ROOT=/usr/local/var/pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # Auto activation for virtualenv
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
-export NVIM_PYTHON_LOG_FILE=/tmp/log
-export NVIM_PYTHON_LOG_LEVEL=DEBUG
+#if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 export GOPATH=$HOME/Documents/macys/code/golang
+workon_virtualenv() {
+  current_dir="${PWD##*/}"
+  if [ -e ~/.virtualenvs/$current_dir ]; then
+    deactivate >/dev/null 2>&1
+    source ~/.virtualenvs/$current_dir/bin/activate
+  else
+    deactivate >/dev/null 2>&1
+  fi
+}
+
+virtualenv_cd() {
+  cd "$@" && workon_virtualenv
+}
+
+alias cd="virtualenv_cd"

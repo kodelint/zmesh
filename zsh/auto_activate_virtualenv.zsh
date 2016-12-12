@@ -1,4 +1,4 @@
-workon_virtualenv() {
+auto_activate_virtualenv() {
   current_dir="${PWD##*/}"
   if [ -e ~/.virtualenvs/$current_dir ]; then
     deactivate >/dev/null 2>&1
@@ -8,8 +8,8 @@ workon_virtualenv() {
   fi
 }
 
-virtualenv_cd() {
-  cd "$@" && workon_virtualenv
+pyvenv_cd() {
+  cd "$@" && auto_activate_virtualenv
 }
 
-alias cd="virtualenv_cd"
+alias cd="pyvenv_cd"

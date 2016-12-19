@@ -3,8 +3,8 @@ auto_activate_virtualenv() {
   if [ -e ~/.virtualenvs/$current_dir ]; then
     deactivate >/dev/null 2>&1
     source ~/.virtualenvs/$current_dir/bin/activate
-  else
-    deactivate >/dev/null 2>&1
+#  else
+#    deactivate >/dev/null 2>&1
   fi
 }
 

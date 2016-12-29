@@ -9,13 +9,9 @@ source $HOME/.rvm/scripts/rvm
 source /usr/local/bin/virtualenvwrapper.sh
 source $HOME/Dropbox/Personal/mygit/pexports.zsh
 source $HOME/Dropbox/Personal/mygit/palias.zsh
-#source $HOME/Dropbox/Personal/mygit/autoenv.sh
 [[ $- = *i* ]] && source $HOME/.zmesh/zsh/liquidprompt/liquidprompt.plugin.zsh
 source $HOME/.zmesh/zsh/git-extra-commands/git-extra-commands.plugin.zsh
 
 # pyenv related
 export PYENV_ROOT=/usr/local/var/pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-# Auto activation for virtualenv
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 export GOPATH=$HOME/Documents/macys/code/golang

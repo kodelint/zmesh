@@ -11,6 +11,8 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'git4sroy/vim-devicons'
 Plug 'vim-scripts/sudo.vim'
+Plug 'neovim/node-host', { 'do': 'npm install' }
+Plug 'vimlab/mdown.vim', { 'do': 'npm install' }
 
 " This is for markdown-build composer"
 function! BuildComposer(info)
@@ -19,5 +21,3 @@ function! BuildComposer(info)
     UpdateRemotePlugins
   endif
 endfunction
-
-Plug 'euclio/vim-markdown-composer', { 'do': function('BuildComposer') }

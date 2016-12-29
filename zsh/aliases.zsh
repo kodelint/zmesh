@@ -18,6 +18,8 @@ alias of='open -a Finder ./'
 alias you='youtube-dl --extract-audio --audio-format mp3'
 alias killssh='ps aux|grep ssh | awk '{print $2}' | xargs kill -9'
 # Commands
+alias quick='qlmanage -p'
+alias filetree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/ /' -e 's/-/|/'"
 alias ols="ls -l | sed -e 's/--x/1/g' -e 's/-w-/2/g' -e 's/-wx/3/g' -e 's/r--/4/g' -e 's/r-x/5/g' -e 's/rw-/6/g' -e 's/rwx/7/g' -e 's/---/0/g'"
 alias webshare='python -c "import SimpleHTTPServer;SimpleHTTPServer.test()"'
 alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say flushed'
@@ -165,7 +167,12 @@ alias sgi='sudo gem install --no-ri --no-rdoc'
 # TODOS
 # This uses NValt (NotationalVelocity alt fork) - http://brettterpstra.com/project/nvalt/
 # to find the note called 'todo'
-alias todo='open nvalt://find/todo'
+#alias todo='open nvalt://find/'
+
+function todo() 
+  {
+    open 'nvalt://find/$1'
+  }
 
 # Forward port 80 to 3000
 alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 80 in'

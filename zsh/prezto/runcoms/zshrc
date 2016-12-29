@@ -22,3 +22,5 @@ fi
 if [ -f /Users/m535987/Downloads/google-cloud-sdk/completion.zsh.inc ]; then
   source '/Users/m535987/Downloads/google-cloud-sdk/completion.zsh.inc'
 fi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

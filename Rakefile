@@ -145,7 +145,7 @@ def install_homebrew
   puts "======================================================"
   puts "Installing Homebrew packages...There may be some warnings."
   puts "======================================================"
-  run %{brew install zsh ctags git hub tmux reattach-to-user-namespace the_silver_searcher pyenv node youtube-dl wget tig shellcheck jq jfrog-cli-go httpie gnu-tar git-extras ffmpeg}
+  run %{brew install zsh ctags git hub tmux reattach-to-user-namespace the_silver_searcher pyenv node youtube-dl wget tig shellcheck jq jfrog-cli-go httpie gnu-tar git-extras ffmpeg pyenv-virtualenv}
   run %{brew install neovim/neovim/neovim}
   puts
   puts

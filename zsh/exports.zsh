@@ -1,10 +1,10 @@
 export DEFAULT_USER=`whoami`
-#export PIP_REQUIRE_VIRTUALENV=true
+export PIP_REQUIRE_VIRTUALENV=true
 #export WORKON_HOME=~/.virtualenvs
 export PYENV_VIRTUALENV_DISABLE_PROMPT=0
 source $HOME/Dropbox/Personal/mygit/pexports.zsh
 source $HOME/Dropbox/Personal/mygit/palias.zsh
-[[ $- = *i* ]] && source $HOME/.zmesh/zsh/liquidprompt/liquidprompt.plugin.zsh
+[[ $- = *i* ]] && source $HOME/.zmesh/zsh/liquidprompt/liquidprompt
 source $HOME/.zmesh/zsh/git-extra-commands/git-extra-commands.plugin.zsh
 # pyenv related
 export PYENV_ROOT=/usr/local/var/pyenv

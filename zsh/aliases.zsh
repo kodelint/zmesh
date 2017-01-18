@@ -87,7 +87,6 @@ alias zr='source ${HOME}/.zpreztorc'
 
 # Git Aliases
 alias gs='git status'
-alias gstsh='git stash'
 alias gst='git stash'
 alias gc='git checkout'
 alias gsp='git stash pop'
@@ -116,14 +115,12 @@ alias gra='git rebase --abort'
 alias ggrc='git rebase --continue'
 alias gbi='git rebase --interactive'
 alias gl='git l'
-alias glg='git l'
-alias glog='git l'
 alias co='git co'
 alias gf='git fetch'
-alias gfch='git fetch'
 alias gd='git diff'
 alias gb='git b'
-alias gbd='git b -D -w'
+alias gba='git b -a'
+alias gbd='git b -D'
 # Staged and cached are the same thing
 alias gdc='git diff --cached -w'
 alias gds='git diff --staged -w'
@@ -168,10 +165,6 @@ alias sgi='sudo gem install --no-ri --no-rdoc'
 alias portforward='sudo ipfw add 1000 forward 127.0.0.1,3000 ip from any to any 80 in'
 
 
-
-# spb = sprintly branch - create a branch automatically based on the bug you're working on
-alias spb="git checkout -b \`sp | tail -2 | grep '#' | sed 's/^ //' | sed 's/[^A-Za-z0-9 ]//g' | sed 's/ /-/g' | cut -d"-" -f1,2,3,4,5\`"
-
 alias hpr='hub pull-request'
 alias grb='git recent-branches'
 
@@ -180,4 +173,4 @@ alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 # Homebrew
-alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
+alias brewu='brew update  && brew upgrade  && brew cleanup && brew prune && brew doctor'

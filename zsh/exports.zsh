@@ -5,7 +5,7 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=0
 source $HOME/Dropbox/Personal/mygit/pexports.zsh
 source $HOME/Dropbox/Personal/mygit/palias.zsh
 [[ $- = *i* ]] && source $HOME/.zmesh/zsh/liquid-prompt/liquidprompt
-source $HOME/.zmesh/zsh/git-extra-commands/git-extra-commands.plugin.zsh
+#source $HOME/.zmesh/zsh/git-extra-commands/git-extra-commands.plugin.zsh
 # pyenv related
 export PYENV_ROOT=/usr/local/var/pyenv
 eval "$(pyenv init -)"

@@ -111,7 +111,7 @@
 [core]
   autocrlf = false
   editor = nvim
-	excludesfile = /Users/satyajit.roy/.gitignore_global
+	excludesfile = /Users/m535987/.gitignore_global
 [advice]
   statusHints = false
 [diff]
@@ -132,8 +132,8 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [user]
-	name = Satyajit Roy
-	email = kodelint@gmail.com
+	name = 
+	email = 
 [gc]
 	auto = 1
 [commit]

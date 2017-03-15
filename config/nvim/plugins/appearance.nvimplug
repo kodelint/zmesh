@@ -7,3 +7,6 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'tomasr/molokai'
 " Required for Gblame in terminal vim
 Plug 'godlygeek/csapprox'
+Plug 'freeo/vim-kalisi'
+Plug 'jdkanani/vim-material-theme'
+Plug 'kristijanhusak/vim-hybrid-material'

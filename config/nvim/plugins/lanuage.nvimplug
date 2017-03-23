@@ -1,5 +1,0 @@
-Plug 'sheerun/vim-polyglot'
-Plug 'honza/vim-snippets'
-Plug 'https://github.com/benekastah/neomake'
-Plug 'skwp/vim-html-escape'
-Plug 'Shougo/deoplete.nvim'
